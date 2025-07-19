@@ -77,10 +77,8 @@ while True:
         telefone = input("Digite o número do contato: ")
         email = input("Digite o email do contato: ")
         adicionar_contatos(agendas, nome, telefone, email)
-
     elif escolha == "2":
         ver_contato(agendas)
-
     elif escolha == "3":
         ver_contato(agendas)
         indice_contato = input("Digite o número do contato que deseja atualizar: ")
@@ -88,23 +86,18 @@ while True:
         novo_telefone = input("Novo telefone: ")
         novo_email = input("Novo email: ")
         atualizar_contato(agendas, indice_contato, novo_nome, novo_telefone, novo_email)
-
     elif escolha == "4":
         ver_contato(agendas)
         indice_contato = input("Digite o número do contato que deseja marcar/desmarcar como favorito: ")
         favoritar_contato(agendas, indice_contato)
-
     elif escolha == "5":
         ver_favoritos(agendas)
-
     elif escolha == "6":
         ver_contato(agendas)
         indice_contato = input("Digite o número do contato que deseja deletar: ")
         deletar_contato(agendas, indice_contato)
-
     elif escolha == "7":
         print("Programa finalizado!")
         break
-
     else:
         print("Opção inválida. Tente novamente.")
